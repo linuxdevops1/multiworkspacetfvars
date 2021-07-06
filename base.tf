@@ -1,14 +1,14 @@
 provider "aws" {
-  access_key = "AKIAXAXYR74L22PYYIXT"
-  secret_key = "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"
-  region     = "ap-south-1"
+  access_key = "AKIAXAXYR74L6GSYWRM6"
+  secret_key = "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"
+  region     = "us-east-1"
 }
 
 resource "aws_instance" "appserver" {
-  ami           = "ami-011c99152163a87ae"
-  instance_type = "t2.micro"
+  ami           = "ami-0ab4d1e9cf9a1215a"
+    instance_type = "t2.micro"
 
   tags = {
-    Name = "Linux-app-server"
+    Name = "linux-apps-erver"
   }
 }
