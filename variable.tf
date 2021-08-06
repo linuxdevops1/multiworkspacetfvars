@@ -36,6 +36,17 @@ variable "aws_instance_type" {
 variable "availability_zone" {
     type = string
 }
+variable "vpc_name" {
+    type = string
+}
+variable "subnet1_name" {
+    type = string
+}
+variable "subnet2_name" {
+    type = string
+}
+variable "aws_instance_name" {}
+variable "keypair_name" {}
 
 
 

@@ -7,6 +7,6 @@ resource "aws_instance" "first-instance" {
   key_name = aws_key_pair.key.id
 
   tags = {
-    Name = "test-server"
+    Name = var.aws_instance_name
   }
 }
